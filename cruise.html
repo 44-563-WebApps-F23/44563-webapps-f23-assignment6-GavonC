@@ -19,6 +19,15 @@
     <input type="button" onclick="selectCruise()" value="select a cruise">
 </form>
 
+<form>
+    <label for="enter number of days">enter number of days</label>
+    <input type ="number" id="days" name="days" value=days> <br>
+
+    <label for="enter price">enter price </label>
+    <input type ="text" id="enter price" name="enter price" autofocus> <br>
+
+    <input type="button" onclick="updateCruise()" value="update the cruise">
+</form>
 
 <p id="result">This text will be replaced </p>
 
@@ -26,7 +35,19 @@
 var my_cruise;
 function selectCruise (){
     console.log("selecting a cruise")
+}
+function updateCruise(){
+    console.log("Getting form values")
+    price = document.getElementById("price").value
+    days = document.getElementById("days").value
+    confirmed = confirm("Are these the values? "+price+" and "+days)
     
+    out = document.getElementById("my_cruise")
+    if(confirmed){
+        out.innerHTML = "Values were confirmed"
+    } else {
+        out.innerHTML = "Values were not confirmed"
+    }
 }
 </script>
 
