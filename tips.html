@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>The Tips Document</title>
+   <body>
+   
+   <h2>Gavon Combe shows tip amounts</h2>
+<body>
+
+<h2>Getting input</h2>
+
+<form>
+    <label for="tip_amount">enter base amount</label>
+    <input type ="number" id="tip_amount" name="tips" value="50"> <br>
+
+    <label for="tip_percent">enter the tip percent</label>
+    <input type ="number" id="tip_percent" name="percent" value="15"> <br>
+
+    <input type="button" onclick="tips()" value="show tip">
+</form>
+
+
+<p id="toShow"></p>
+
+<script> 
+
+function tips (){
+    console.log("Getting form values")
+    tip = document.getElementById("tip_amount").value
+    percent = document.getElementById("tip_percent").value
+    var myOutput;
+    const times = 5;
+    for(let i = 0; i < times; i++){
+        var tip = (tip_amount/(tip_percent+i));
+        console.log(""+tip+""+(tip_percent+i));
+    }
+    
+    out = document.getElementById("result")
+    if(confirmed){
+        out.innerHTML = "Values were confirmed"
+    } else {
+        out.innerHTML = "Values were not confirmed"
+    }
+}
+</script>
+
+</body>
+</html> 
