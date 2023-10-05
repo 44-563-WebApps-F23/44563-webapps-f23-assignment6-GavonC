@@ -2,3 +2,8 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM
 
+hosted at
+https://github.com/44-563-WebApps-F23/44563-webapps-f23-assignment6-GavonC 
+C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\tips.html
+C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\cruise.html
+C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\Author.html
