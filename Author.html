@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
  <title>The Author Document</title>
+ <head>
+    <style>
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+ </head>
 <body>
 
 <h2>Author Entry Gavon Combe</h2>
@@ -36,6 +44,36 @@ function checkAuthor(){
     }
 }
 </script>
-
+<div class="container">
+    <div class="img">
+        <img src="C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\Boston.jfif">
+    </div>
+    <button onclick="selectImage()">click</button>
+</div>
+<script>
+    let useImage = 1
+    function selectImage(){
+        switch(useImage){
+            case "1":{
+                <img src="C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\Boston.jfif">;
+                useImage = 2;
+                console.log();
+                break;
+            }
+            case "2":{
+                <img src="C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\catmandoo.jfif">;
+                useImage = 3;
+                console.log();
+                break;   
+            }
+            case "3":{
+                <img src="C:\Users\s537671\OneDrive - nwmissouri.edu\Documents\Web Dev\Webapps-repos\44563-webapps-f23-assignment6-GavonC\Eindhoven.jfif">;
+                useImage = 1;
+                console.log();
+                break;
+            }
+        }
+    }
+</script>
 </body>
-</html> 
+</html>
