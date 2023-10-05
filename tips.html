@@ -34,7 +34,7 @@ function tips (){
         console.log(""+tip+""+(tip_percent+i));
     }
     
-    out = document.getElementById("result")
+    out = document.getElementById("myOutput")
     if(confirmed){
         out.innerHTML = "Values were confirmed"
     } else {
@@ -42,6 +42,39 @@ function tips (){
     }
 }
 </script>
+<form>
+    <input type="radio" onclick="chooseOp()" id="sum" name="sum" value="sum"   
+      checked >
+    <label for="sum">sum</label></br>
+  
+    <input type="radio" onclick="chooseOp()" id="diff" name="diff" 
+       value="difference">
+    <label for="diff">diff</label></br>
+  
+    <input type="radio" onclick="chooseOp()" id="mult" name="mult"   
+       value="product">
+    <label for="mult">mult</label></br>
 
+    <input type="button" onclick="chooseOp()" value="Get values from radio group">
+  </form>
+  <p></p>
+  <script>
+    function chooseOp(){
+        console.log("Getting input")
+        tip = document.getElementById("tip_amount").value
+        percent = document.getElementById("tip_percent").value
+        
+     out = document.getElementById("result")
+        if(sum){
+             out.innerHTML = "sum of"+tip+"and"+myOutput+"is"+(tip+myOutput)
+         } 
+        if(diff) {
+            out.innerHTML = "difference of"+tip+"and"+myOutput+"is"+(tip/myOutput)
+         }
+        else {
+            out.innerHTML = "product of"+tip+"and"+myOutput+"is"+(tip*myOutput)
+        }
+    }
+  </script>
 </body>
 </html> 
